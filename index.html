@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>초지고등학교 급식 정보</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>초지고등학교 급식 정보</h1>
+    </header>
+    
+    <main>
+      <div class="date-selector">
+        <label for="meal-date">날짜 선택:</label>
+        <input type="date" id="meal-date" name="meal-date">
+        <button id="search-btn">급식 조회</button>
+      </div>
+      
+      <div id="loading" class="loading hidden">
+        조회 중...
+      </div>
+      
+      <div id="meal-info" class="meal-info">
+        <div class="meal-card">
+          <h2>오늘의 급식</h2>
+          <p class="instruction">날짜를 선택하고 급식 조회 버튼을 클릭해주세요.</p>
+        </div>
+      </div>
+      
+      <div id="error-message" class="error-message hidden">
+        <p>급식 정보를 불러오는데 실패했습니다. 다시 시도해주세요.</p>
+      </div>
+    </main>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
